@@ -22,5 +22,16 @@ body, html{
 
 .main-title span{
   border-bottom: 7px groove rgba(28,110,164,0.85);
-border-radius: 0px 0px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
+  padding-bottom: 5px;
+  color:#6571fd;
+  animation: main_title  infinite 3s linear ;
+}
+
+@keyframes main_title {
+  0%   {border-bottom: 7px groove rgba(28,110,164,0.85);}
+  25%  {border-bottom: 7px groove greenyellow;}
+  50%  {border-bottom: 7px groove #00FF00;}
+  75%  {border-bottom: 7px groove #18A5D6;}
+  100% {border-bottom: 7px groove #FF9C00;}
 }

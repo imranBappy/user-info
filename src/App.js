@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import User from './components/User';
+import User from './components/User/User';
 import data from './fake_data/data.json';
 function App() {
   let colors = ['00FF00', '18A5D6', 'D60808', 'FF9C00', '9C00FF', 'FF00CC', 'D60808', '00FF00', '8D99AE', 'EF233C'];

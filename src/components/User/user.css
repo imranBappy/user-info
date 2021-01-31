@@ -1,0 +1,80 @@
+.user{
+    flex: 6 1 500px;
+    margin: 10px 0px;
+}
+
+.user-info{
+  text-align: center;
+  margin: 0 auto;
+  width:50%;
+  animation: infoBorder  infinite 3s linear ;
+}
+
+@keyframes infoBorder {
+  0%   {border: 2px solid #00FF00; border-radius: 50%;}
+  25%  {border: 2px solid #FF00CC; border-radius: 50%;}
+  50%  {border: 2px solid blue; border-radius: 50%;}
+  75%  {border: 2px solid #18A5D6; border-radius: 50%;}
+  100% {border: 2px solid red; border-radius: 50% ;}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .user-info img:hover {
+    animation: img  infinite 5s linear;
+  }
+}
+
+
+@keyframes img {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.user-info img{
+  width:150px;
+  border: 4px solid #adff2f;
+  border-radius: 50%;
+  animation: imgBorder  infinite 3s linear ;
+}
+
+
+@keyframes imgBorder {
+  0%   {border: 4px solid #00FF00; border-radius: 50%;}
+  25%  {border: 4px solid #FF00CC; border-radius: 50%;}
+  50%  {border: 4px solid blue; border-radius: 50%;}
+  75%  {border: 4px solid #18A5D6; border-radius: 50%;}
+  100% {border: 4px solid red; border-radius: 50%;}
+}
+
+
+
+
+.user-info h3{
+  margin-top:8px;
+    font-size:15px;
+    font-weight:600
+}
+.user-info p{
+  margin-top:8px;
+    font-size:13px;
+    font-weight:500
+}
+
+.user-info button{
+  width:150px;
+  margin-top: 10px;
+  padding: 5px 0px;
+  border: 1px solid #000;
+  border-radius: 0px 0px 35px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(36, 36, 36)
+}
+._user{
+  margin: 20px 20px 15px 20px;
+}
